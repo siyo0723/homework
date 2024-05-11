@@ -4,3 +4,6 @@
 <br>
 > - 20240503 과제 md 코드설명 페이지
 >> https://github.com/siyo0723/homework/blob/main/avatars/avatars.md
+
+> - 20240510 과제 md 코드설명 페이지
+>> https://github.com/siyo0723/homework/blob/main/naver/naver.md
