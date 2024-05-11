@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>네이버 로그인 창</title>
+  <link rel="stylesheet" href="./naver.css" />
+</head>
+
+<body>
+  <div class="container" role="group">
+    <!-- SVG 형식의 로고 이미지 -->
+    <img src="./logo.svg" alt="네이버 svg 로고" class="logo-svg">
+    <!-- PNG 형식의 로고 이미지 -->
+    <img src="./naver_logo.png" alt="네이버 png 로고" class="logo-png">
+
+    <!-- 로그인 폼 -->
+    <div class="login-form-container">
+      <form action="/" class="login-form">
+        <fieldset>
+          <legend class="">회원 로그인 폼</legend>
+
+          <div class="login-input-group" role="group">
+            <!-- 아이디 입력 서식 -->
+            <div role="group" class="form-input">
+              <label for="userEmail"></label>
+              <input type="email" id="userEmail" required placeholder="   아이디(이메일)" name="userEmail" />
+            </div>
+            <!-- 비밀번호 입력 서식 -->
+            <div role="group" class="form-input">
+              <label for="userPwd"></label>
+              <input type="password" id="userPwd" required placeholder="   비밀번호" name="userPwd" />
+            </div>
+          </div>
+
+          <button type="button" class="login-button button">로그인</button>
+        </fieldset>
+      </form>
+    </div>
+    
+    <div class="login-status-container">
+      <form action="/" class="login-status-form">
+        <!-- 로그인 상태 유지 -->
+        <div class="keep-login">
+          <input type="checkbox" id="login-toggle" class="status-toggle1">
+          <label for="login-toggle" aria-label="로그인 상태 토글">
+            <!-- 비활성화 이미지  -->
+            <img src="./icons/unchecked.svg" alt="로그인 상태유지 오프라인" class="status-btn-uncheck">
+            <!-- 활성화 이미지 -->
+            <img src="./icons/checked.svg" alt="로그인 상태유지 온라인" class="status-btn-check">
+          </label> 
+          <span>로그인 상태 유지</span>
+        </div>
+        <!-- IP 보안 -->
+        <div class="ip-security">
+          <a href="/homework/naver/ip_security.html" target="_blank">IP 보안</a>
+          <input type="checkbox" id="ip-security-toggle" class="status-toggle2">
+          <label for="ip-security-toggle" aria-label="IP 보안 토글">
+            <span class="status-btn-off">OFF</span>
+            <span class="status-btn-on">ON</span>
+          </label>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+</body>
+
+</html>
